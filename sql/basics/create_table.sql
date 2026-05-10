@@ -82,3 +82,80 @@ select name,age,course from students;
 -- extract all the columns except id column 
 
 select name,age,city,course,grade from students;
+
+--
+select name
+        ,age
+        ,course
+        ,grade
+        ,city
+        ,'dummy column' 
+from students;
+
+Creating a dummy columns
+select name
+        ,age
+        ,course
+        ,grade
+        ,city
+        ,'dummy column' 
+from students;
+
+select name
+        ,age
+        ,course
+        ,grade
+        ,city
+        ,'dummy column' as dummy
+from students;
+
+--creating a user defined columns which are having a capability of calculating directly like birthyear
+--a column using pre-defined functions like today and time
+select name
+        ,age
+        ,course
+        ,grade
+        ,city
+        ,'dummy column' as dummy
+        ,2026-age as birthyear
+        ,current_date as today
+        ,current_time as time
+from students;
+
+
+-- Filtering
+
+select name
+        ,age
+        ,course
+        ,grade
+        ,city
+        ,'dummy column' as dummy
+        ,2026-age as birthyear
+        ,current_date as today
+        ,current_time as time
+from students
+where course = 'SQL';
+
+-- show me all the students who are failed 
+
+select * from students
+where grade = 'Failed';
+
+/* 
+
+> greater than 
+< lesser than 
+!= not equals to 
+
+*/
+
+select * from students
+where age > 21;
+
+
+
+
+
+
+
