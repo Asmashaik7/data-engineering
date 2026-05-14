@@ -1,0 +1,126 @@
+CREATE TABLE sales_data (
+    order_id INT,
+    customer_name VARCHAR(30),
+    city VARCHAR(30),
+    category VARCHAR(30),
+    product_name VARCHAR(50),
+    quantity INT,
+    sales_amount REAL
+);
+
+
+
+INSERT INTO sales_data VALUES
+(1, 'Alice', 'Hyderabad', 'Electronics', 'Laptop', 1, 5000),
+(2, 'Bob', 'Hyderabad', 'Electronics', 'Smartphone', 2, 7000),
+(3, 'Charlie', 'Hyderabad', 'Electronics', 'Tablet', 3, 7000),
+(4, 'David', 'Hyderabad', 'Electronics', 'Headphones', 4, 9000),
+(5, 'Eve', 'Hyderabad', 'Electronics', 'Camera', 5, 12000),
+(6, 'Frank', 'Bangalore', 'Home Appliances', 'Refrigerator', 1, 4000),
+(7, 'Grace', 'Bangalore', 'Home Appliances', 'Washing Machine', 2, 6000),
+(8, 'Heidi', 'Bangalore', 'Home Appliances', 'Microwave Oven', 3, 6000),
+(9, 'Ivan', 'Bangalore', 'Home Appliances', 'Air Conditioner', 4, 10000),
+(10, 'Judy', 'Bangalore', 'Home Appliances', 'Vacuum Cleaner', 5, 15000),
+(11, 'Karl', 'Chennai', 'Furniture', 'Sofa Set', 1, 3000),
+(12, 'Leo', 'Chennai', 'Furniture', 'Dining Table', 2, 3000),
+(13, 'Mallory', 'Chennai', 'Furniture', 'Bed Frame', 3, 5000),
+(14, 'Nina', 'Chennai', 'Furniture', 'Wardrobe', 4, 8000),
+(15, 'Oscar', 'Chennai', 'Furniture', 'Bookshelf', 5, 11000),
+(16, 'Peggy', 'Mumbai', 'Clothing & Accessories','T-shirt Set' ,1 ,4500),
+(17,  	'Quentin'	,'Mumbai'	,'Clothing & Accessories'	,'Jeans',		2	 ,4500),
+(18	,'Rupert'	,'Mumbai'	,'Clothing & Accessories'	,'Jacket',	3	 ,7500),
+(19	,'Sybil'	,'Mumbai'	,'Clothing & Accessories'	,'Sneakers',	4	 ,9500),
+(20	,'Trent'	,'Mumbai'	,'Clothing & Accessories'	,'Watch',	5	 ,14000),
+(21	,'Uma'	,'Pune'	,'Books & Stationery'	,'Novel Set',	1	 ,3500),
+(22	,'Victor'	,'Pune'	,'Books & Stationery'	,'Textbook Set',	2	 ,5500),
+(23	,'Wendy'	,'Pune'	,'Books & Stationery'	,'Notebook Set',	3	 ,5500),
+(24	,'Xavier'	,'Pune'	,'Books & Stationery'	,'Pen Set',	    4	  ,8500),
+(25	,'Yvonne'	,'Pune'	,'Books & Stationery'	,'Art Supplies Set', 5, 13000),
+(26, 'Zara', 'Delhi', 'Sports & Outdoors', 'Fitness Tracker', 1, 6000),
+(27, 'Adam', 'Delhi', 'Sports & Outdoors', 'Yoga Mat', 2, 4000),
+(28, 'Eve', 'Delhi', 'Sports & Outdoors', 'Dumbbell Set', 3, 8000),
+(29, 'Charlie', 'Delhi', 'Sports & Outdoors', 'Treadmill', 4, 15000),
+(30, 'Bob', 'Delhi', 'Sports & Outdoors', 'Bicycle', 5, 20000),
+(31, 'Alice', 'Hyderabad', 'Electronics', 'Laptop', 1, 5000),
+(32, 'Bob', 'Hyderabad', 'Electronics', 'Smartphone', 2, 7000),
+(33, 'Charlie', 'Hyderabad', 'Electronics', 'Tablet', 3, 7000),
+(34, 'David', 'Hyderabad', 'Electronics', 'Headphones', 4, 9000),
+(35, 'Eve', 'Hyderabad', 'Electronics', 'Camera', 5, 12000),
+(36, 'Frank', 'Bangalore', 'Home Appliances', 'Refrigerator', 1, 4000),
+(37, 'Grace', 'Bangalore', 'Home Appliances', 'Washing Machine', 2, 6000),
+(38, 'Heidi', 'Bangalore', 'Home Appliances', 'Microwave Oven', 3, 6000),
+(39, 'Ivan', 'Bangalore', 'Home Appliances', 'Air Conditioner', 4, 10000),
+(40, 'Judy', 'Bangalore', 'Home Appliances', 'Vacuum Cleaner', 5, 15000),
+(41, 'Karl', 'Chennai', 'Furniture', 'Sofa Set', 1, 3000),
+(42, 'Leo', 'Chennai', 'Furniture', 'Dining Table', 2, 3000),
+(43, 'Mallory', 'Chennai', 'Furniture', 'Bed Frame', 3, 5000),
+(44, 'Nina', 'Chennai', 'Furniture', 'Wardrobe', 4, 8000),
+(45, 'Oscar', 'Chennai', 'Furniture', 'Bookshelf', 5, 11000),
+(46, 'Peggy', 'Mumbai', 'Clothing & Accessories','T-shirt Set' ,1 ,4500),
+(47,  	'Quentin'	,'Mumbai'	,'Clothing & Accessories'	,'Jeans',		2	 ,4500),
+(48	,'Rupert'	,'Mumbai'	,'Clothing & Accessories'	,'Jacket',	3	 ,7500),
+(49	,'Sybil'	,'Mumbai'	,'Clothing & Accessories'	,'Sneakers',	4	 ,9500),
+(50	,'Trent'	,'Mumbai'	,'Clothing & Accessories'	,'Watch',	5	 ,14000),
+(1001, 'Ravi', 'Hyderabad', 'Electronics', 'Laptop', 1, 75000),
+(1002, 'Sneha', 'Bangalore', 'Electronics', 'Phone', 2, 90000),
+(1003, 'Arjun', 'Chennai', 'Furniture', 'Chair', 3, 15000),
+(1004, 'Priya', 'Mumbai', 'Electronics', 'Laptop', 1, 75000),
+(1005, 'Kiran', 'Pune', 'Accessories', 'Bottle', 5, 2500),
+(1006, 'Rahul', 'Hyderabad', 'Electronics', 'Mouse', 4, 2800),
+(1007, 'Meena', 'Delhi', 'Furniture', 'Table', 1, 12000),
+(1008, 'Suresh', 'Chennai', 'Electronics', 'Keyboard', 2, 3000),
+(1009, 'Anita', 'Mumbai', 'Electronics', 'Phone', 1, 45000),
+(1010, 'Vikram', 'Bangalore', 'Electronics', 'Laptop', 1, 75000),
+(1011, 'Neha', 'Pune', 'Accessories', 'Bottle', 10, 5000),
+(1012, 'Ramesh', 'Hyderabad', 'Furniture', 'Chair', 2, 10000),
+(1013, 'Divya', 'Delhi', 'Electronics', 'Phone', 1, 45000),
+(1014, 'Karthik', 'Mumbai', 'Electronics', 'Laptop', 1, 80000),
+(1015, 'Lavanya', 'Bangalore', 'Electronics', 'Mouse', 3, 2100),
+(1016, 'Harish', 'Chennai', 'Electronics', 'Monitor', 1, 18000),
+(1017, 'Pooja', 'Hyderabad', 'Electronics', 'Keyboard', 2, 2000),
+(1018, 'Nikhil', 'Pune', 'Electronics', 'Laptop', 1, 72000),
+(1019, 'Asha', 'Delhi', 'Electronics', 'Phone', 1, 43000),
+(1020, 'Manoj', 'Mumbai', 'Furniture', 'Chair', 1, 6500),
+(1021, 'Ravi', 'Hyderabad', 'Electronics', 'Phone', 1, 45000),
+(1022, 'Sneha', 'Bangalore', 'Accessories', 'Bottle', 4, 2000),
+(1023, 'Arjun', 'Chennai', 'Furniture', 'Table', 1, 14000),
+(1024, 'Priya', 'Mumbai', 'Electronics', 'Mouse', 2, 1400),
+(1025, 'Kiran', 'Pune', 'Electronics', 'Keyboard', 3, 4500),
+(1026, 'Rahul', 'Hyderabad', 'Furniture', 'Chair', 1, 5000),
+(1027, 'Meena', 'Delhi', 'Electronics', 'Laptop', 1, 76000),
+(1028, 'Suresh', 'Chennai', 'Accessories', 'Bottle', 6, 3000),
+(1029, 'Anita', 'Mumbai', 'Electronics', 'Monitor', 1, 17000),
+(1030, 'Vikram', 'Bangalore', 'Furniture', 'Table', 1, 15000);
+
+
+SELECT * FROM sales_data
+
+
+-- Sample GROUP BY queries to practice
+
+-- 1. Total sales amount for each city
+SELECT SUM(SALES_AMOUNT) as total_sales, city 
+FROM sales_data 
+GROUP BY city
+
+-- 2. Total quantity sold for each category
+select sum(quantity) as Total_quantity,category
+from sales_data
+group by category
+
+
+-- 3. Average sales amount for each product
+
+
+-- 4. Maximum sales amount for each city
+-- 5. Minimum sales amount for each category
+-- 6. Total sales amount for each city and category
+-- 7. Total quantity sold for each city and product
+-- 8. Average sales amount for each city and product
+-- 9. Maximum sales amount for each city and category
+-- 10. Minimum sales amount for each city and category
+-- 11. Total sales amount for each customer
+-- 12. Total quantity sold for each customer
+-- 13. Average sales amount for each customer
+-- 14. Maximum sales amount for each customer
+-- 15. Minimum sales amount for each customer
