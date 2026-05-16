@@ -1,4 +1,4 @@
-CREATE TABLE sales_data (
+CREATE TABLE sales_data(
     order_id INT,
     customer_name VARCHAR(30),
     city VARCHAR(30),
@@ -8,7 +8,7 @@ CREATE TABLE sales_data (
     sales_amount REAL
 );
 
-
+use SphoorthiDB;
 
 INSERT INTO sales_data VALUES
 (1, 'Alice', 'Hyderabad', 'Electronics', 'Laptop', 1, 5000),
@@ -104,23 +104,83 @@ FROM sales_data
 GROUP BY city
 
 -- 2. Total quantity sold for each category
-select sum(quantity) as Total_quantity,category
+select category, sum(quantity) as Total_quantity
 from sales_data
 group by category
 
-
+--date:16-05-26
 -- 3. Average sales amount for each product
-
+select product_name, Avg(sales_amount) as Avg_sales
+from sales_data
+group by product_name
 
 -- 4. Maximum sales amount for each city
+select city, Max(sales_amount) as Max_sales
+from sales_data
+group by city
+
+
 -- 5. Minimum sales amount for each category
+select category, Min(sales_amount) as Min_sales
+from sales_data
+group by category 
+
+
 -- 6. Total sales amount for each city and category
+select city,category, sum(sales_amount) as sum_sales
+from sales_data
+group by city,category
+
+
 -- 7. Total quantity sold for each city and product
+select city,product_name, sum(quantity) as total_quantity
+from sales_data
+group by city,product_name
+
+
 -- 8. Average sales amount for each city and product
+select city,product_name, avg(sales_amount) as avg_sales
+from sales_data
+group by city,product_name
+
+
 -- 9. Maximum sales amount for each city and category
+select city,category, max(sales_amount) as max_sales
+from sales_data
+group by city,category
+
+
 -- 10. Minimum sales amount for each city and category
+select city,category, min(sales_amount) as min_sales
+from sales_data
+group by city,category
+
+
 -- 11. Total sales amount for each customer
+select customer_name, sum(sales_amount) as total_sales_per_customer
+from sales_data
+group by customer_name
+
+
 -- 12. Total quantity sold for each customer
+select customer_name, sum(quantity) as total_quantity
+from sales_data
+group by customer_name
+
+
 -- 13. Average sales amount for each customer
+select customer_name, avg(sales_amount) as avg_sales_amount
+from sales_data
+group by customer_name
+
+
 -- 14. Maximum sales amount for each customer
+select customer_name, max(sales_amount) as max_sales_amt
+from sales_data
+group by customer_name
+
+
 -- 15. Minimum sales amount for each customer
+select customer_name, min(sales_amount) as min_sales_amt
+from sales_data
+group by customer_name
